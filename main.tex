@@ -1,57 +1,38 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+\documentclass[11pt,a4paper,roman]{moderncv}        
 
+\moderncvstyle{classic}                            % style options are 'casual', 'classic', and 'banking'
+\moderncvcolor{black}                                
+\renewcommand{\familydefault}{\rmdefault}       
+\nopagenumbers{}                                
 
-\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
-% modern themes
-\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
 \usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\pagenumbering{alph}
 \usepackage{fontawesome}
 \usepackage{tabularx}
 \usepackage{ragged2e}
-% if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
-% adjust the page margins
 \usepackage[scale=0.8]{geometry}
 \usepackage{multicol}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
+\setlength{\hintscolumnwidth}{3cm}               
+% \setlength{\makecvtitlenamewidth}{10cm}           
+\usepackage{outlines}
 \usepackage{import}
 
-% personal data
 \name{Alexandros Ioannidis}{}
-% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-\address{6 Blackfriars Road, Glasgow, G1 1QL }{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
-% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
-% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
-% \extrainfo{}                 % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+\title{Resume}                             
+\address{\textbf{Dirfis 30B, Athens, Attica, Zip Code: 152 35}}{}{}
+\phone[mobile]{+30-6987312863}                   
+\email{alexioanid@yahoo.gr | alexandros.ioannidis@strath.ac.uk}                     
+\homepage{www.github.com/it21208 | www.linkedin.com/in/alexandrosioannidis}
+\extrainfo{European Driving License: A2, B}
 
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
   
 \newcommand*{\customcventry}[7][.25em]{
   \begin{tabular}{@{}l} 
@@ -76,7 +57,6 @@
   \par\addvspace{#1}}
 
 \newcommand*{\customcvproject}[4][.25em]{
-%   \vfill\noindent
   \begin{tabular}{@{}l} 
     {\bfseries #2}
   \end{tabular}
@@ -93,26 +73,14 @@
 
 \setlength{\tabcolsep}{12pt}
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-\makecvtitle
-\vspace*{-23mm}
 
-\begin{center}
-\begin{tabular}{c c c}
- \faGlobe\enspace linkedin.com/in/alexandrosioannidis & \faEnvelopeO\enspace alexioanid@yahoo.gr & \faGithub\enspace www.github.com/it21208  \\
- \end{tabular}
- \begin{tabular}{c c c}
-  European Driving License: A2, B & \faEnvelopeO\enspace alexandros.ioannidis@strath.ac.uk & \faMobile\enspace +306987312863 &   
- \end{tabular}
-\end{center}
+\makecvtitle
+\vspace*{-12mm}
+
 
 \section{EDUCATION}
-{\customcventry{September 2017 - Present}{PhD in Computer and Information Science}{University of Strathclyde}{Glasgow, UK}{}{}}
+{\customcventry{September 2017 - Present}{PhD in Computer and Information Sciences}{University of Strathclyde}{Glasgow, UK}{}{} Ongoing funded and innovative Research and Development}
 \vspace{3mm}
 
 {\customcventry{September 2017 - June 2019}{Post-Graduate Certificate in Research Professional Development}{University of Strathclyde}{Glasgow, UK}{}{} Collected 60/60  E.C.T.S. credits }
@@ -129,36 +97,39 @@
 \section{KEY SKILLS}
 
 \begin{itemize}
-    \item Programming Languages: Java, Python, R, HTML/CSS, Javascript, MySQL, SQL Oracle.
-    \item Phpmyadmin, Apache Server 2, Glassfish Server, CMS Tools (i.e. Wordpress, OpenCart, Xcart).
-    \item Microsoft Office Suite, LaTeX, BibTeX, Slack, Trello.
+    \item \textbf{Programming Languages:} Python3, Java, R, HTML/CSS, Python2, MySQL, SQL Oracle, JavaScript.
+    \item \textbf{Systems:} Anaconda, Phpmyadmin, Apache Server 2, Apache Lucene, Apache Spark, Apache JMeter, Glassfish Server, CMS Tools (i.e. Wordpress, OpenCart, Xcart), Overleaf.
+    item \textbf{IDEs:} Visual Studio Code, NetBeans, Spider and Jupyter Notebook. 
+    \item \textbf{Operating Systems:} Mainly Linux Ubuntu and Debian flavours, Windows 10, 7 and Vista and Unix Solaris.
+    \item \textbf{General Purpose Software:} Microsoft Office Suite, Libre Office, LaTeX (Overleaf), BibTeX, OneNote, Slack, Trello, EndNote, Zoom, Microsoft Project, Skype 4 Business.
+    \item \textbf{Version Control System: } Git.
     \item In my 12-month placement in the Central Bank of Greece, I displayed organisational, communication and analytical skills in assisting teams within the ESSM division.
-    \item Experienced with the following Datasets and Test Collections: PubMed article data, Movie Lens datasets, Netflix dataset, Blood Transfusion Service dataset (UCI ML repository), CDNOW transactional dataset, Titanic dataset (Kaggle repository).
-    \item  I am a disciplined, dedicated and strong-willed professional with great aspirations. I am willing to put in the work necessary to deliver projects. 
-
-   
+    \item \textbf{Datasets:} Experienced with the following Datasets and Test Collections: PubMed article data, Movie Lens datasets, Netflix dataset, Blood Transfusion Service dataset (UCI ML repository), CDNOW transactional dataset, Titanic dataset (Kaggle repository), NYT 2017 Common Core Collections, Job Shop Scheduling data and more.
+    \item \textbf{Soft Skills:} I am a disciplined, dedicated and strong-willed professional with great aspirations. I am willing to extend my knowledgebase and put in the work necessary to deliver projects on time. 
+    \item \textbf{Weaknesses:} Not well familiarised with Agile, Scrum, Waterfall development although I have completed a Software Processes & Agile Practices course.
 \end{itemize}
 
 \section{ACADEMIC PROJECTS}
 
-{\customcvproject{Ph.D. Thesis | Doctoral Researcher}{Aug 2017 - Present}
+{\customcvproject{Ph.D. Thesis | Doctoral Researcher \\ Information Retrieval \& Artificial Intelligence for Conducting Systematic Reviews}{Aug 2017 - Present}
   {\begin{itemize}
     \item Research topic on Information Retrieval and Machine Learning for conducting Systematic Reviews.
     \item My research focuses on reducing the medical cost of assessing documents by using, extending and developing information retrieval tool-kits and applying continuous active learning with supervised Machine Learning techniques in Java and Python to create intelligent digital search assistants.
-    \item These assistants are developed in such way to collaborate with human reviewers to complete the tasks of creating systematic reviews in information retrieval.
-    \item Evaluating information retrieval algorithms.
+    \item These assistants are developed in such way to collaborate with human reviewers to complete the tasks of creating systematic reviews for diagnostic test accuracy in information retrieval.
+    \item Evaluating information retrieval search strategies (i.e. document ranking and screening models).
+    \item Not graduated yet.
   \end{itemize}
   }
 }
 
-{\customcvproject{Master's Thesis | Post-graduate Researcher} {Feb 2017 – Jul 2017}
+{\customcvproject{Master of Science Thesis | Post-Graduate Researcher} {Feb 2017 – Jul 2017}
 {\begin{itemize}
   \item The purpose of the research was to assert the generality of the predictive RFMTC model as an improved more customisable alternative of the RFM marketing model and other Machine Learning algorithms (i.e. SVM, K-Means). 
   \item And to justify the additional implementation complexity of some model parameters such as the Time since first purchase or donation of a customer in a certain period and the Churn rate as a productive one. I used extensively the R scripting language, the CRAN repository for the minimisation of objective non-linear functions and the Excel Solver Add-in.
 \end{itemize}
 }
 
-{\customcvproject{Bachelor's Thesis
+{\customcvproject{Bachelor of Science Thesis
 | Undergraduate}{Jan 2016 – May 2016}
 {\begin{itemize}
   \item Extended a system that encourages Movie Lens users by proposing new films tailored to the needs of each user. More specifically, the SVD algorithm (http://www.timelydevelopment.com/demos/NetflixPrize.html) was parallelised in Java and Apache Spark, the third optimal algorithm in the Kaggle competition conducted by Netflix. The objective of the competition was to find the best collaborative filtering algorithm for predicting user ratings for films based on previous reviews.
@@ -169,10 +140,21 @@
 
 \section{EXPERIENCE}
 
+{\customcventry{March 2020 - Present}{Self-employed Computer Science Teacher and IT Contractor}{Teacher and Freelancer at teacherfinder.gr, Upwork and kathigites.com}{Worldwide}{}
+{\begin{flushleft}
+\begin{itemize}
+  \item I have been teaching private lessons mainly to undergraduate and postgraduate students the following programming languages: Java, Python, R, JavaScript, HTML/CSS, MySQL and Oracle SQL. 
+  \item I have been providing technical support services mainly to postgraduate and undergraduate students. These services included designing, solving and coding projects and other exercises.
+  \item Informatics and Mathematics courses are also delivered for Lyceum and Gymnasium students.  
+  \item Courses were supported with my physical presence in a classroom set up and remotely through Skype, Zoom and Hangouts.
+\end{itemize} 
+\end{flushleft} } } 
+
 {\customcventry{August 2018 - April 2019}{Technology Analyst}{Centre of Information Technology Support of the Hellenic Army}{Athens, Greece}{}
 {\begin{flushleft}
 \begin{itemize}
-  \item Operated the Janus strategy simulation software.  
+  \item Operated the Janus strategy simulation software.
+  \item Execution of various parametric spreadsheets to help allocate land army personnel.
   \item Operated the Joint Exercise Management Module (JEMM).
   \item Contributed in the interconnection of VBS3, SteelBeast, and JCATS through DIS.
   \item Installed and synchronised an indoor camera with Idomeneus a high-tech software that creates a virtual reality military indoor firing range using lasers and video imagery.
@@ -181,41 +163,61 @@
 \end{itemize} 
 \end{flushleft} } } 
 
+{\customcventry{October 2017 - April 2019}{Java and Python Lab Demonstrator | Exams Assessor}{University of Strathclyde}{Glasgow, UK}{}
+{\begin{flushleft}
+\begin{itemize}
+\begin{outline}[enumerate]
+\1 Lab Demonstrator and Assessor for Undergraduate and Postgraduate Students at the University of Strathclyde in the Computer and Information Sciences Department.
+\1 I demonstrated at a University of the UK higher education the following Java and Python courses:
+    \2 Programming Foundations
+    \2 Advanced Programming
+    \2 Big Data Technologies
+    \2 Big Data Fundamentals
+\end{outline} 
+\end{itemize}
+\end{flushleft} } }
+
 {\customcventry{August 2017 - October 2017}{Research Analyst | Automation of Newslines pipeline}{Newslines}{Glasgow, UK}{}
 {\begin{flushleft}
 \begin{itemize}
     \item Built a continuous delivery model to reduce editorial time for the development of articles.
     \item Text processing on media news stream using Python libraries (i.e. nltk, beautiful soup, scikit-learn, pandas, numpy). 
     \item Understanding the Wordpress structure of MySQL database for schema objects and their relations primary and foreign keys.
-    \item Extracting  automatically original source links from summary articles.Fetching the HTML content from the source URLs, and extraction of title and clean text of articles found on the WWW. Extraction of named events and named entities with Stanford NER toolkit for classification. 
+    \item Extracting  automatically original source links from summary articles.Fetching the HTML content from the source URLs, and extraction of title and clean text of articles found on the WWW. 
+    \item Extraction of named events and named entities with Stanford NER toolkit for classification. 
     \item Text feature extraction, tokenisation, build-analysis of text, bag of words representation, common and TF\_IDF term weighting vectoriser usage, train and test with ML models (LDA, SVM).
+    \item The project developed and the conclusion of my analysis helped form a business report (> £21000) for a bigger funding award competition which the company would participate to pursue growth. 
 \end{itemize}
 \end{flushleft} } }
 
-{\customcventry{July 2015 - July 2016}{Technology Analyst | Internship}{Central Bank of Greece (BoG)}{Athens, Greece}{}
+{\customcventry{July 2015 - July 2016}{Technology Analyst Intern | Internship}{Central Bank of Greece (BoG)}{Athens, Greece}{}
 {\begin{flushleft}
 \begin{itemize}
     \item Participated in the migration to the Target II Security Euro-system.
     \item Used the FT Console System for monitoring components of the Secondary Securities Market Department.
     \item Contributed to the Bonds Report Server System written in VB2012 and participated in the development of an application which facilitated remote access for users in the Dematerialised securities System division.
-    \item Managed the Test database. 
+    \item Managed the Test database in Oracle SQL.
+    \item Manipulated the end-of-day buy/sell back transactions in securities within the Book-Entry Securities System of the Bank of Greece (BOGS).
+    \item Left because I wanted to expand my horizons and pursue a Master of Science degree in Glasgow, UK. 
 \end{itemize}
 \end{flushleft} } }
-
+\newpage
 \section{AWARDS AND ACHIEVEMENTS}
 \begin{minipage}{\maincolumnwidth}%
 	\small{
     	\begin{itemize}
-          \item Ph.D. Scholarship Award (Stipend and Bursary), University of Strathclyde, August 2017
+          \item Ph.D. Scholarship Award for 36 months (Stipend and Bursary £19362 per annum), University of Strathclyde, August 2017
           \item 3rd place in Machine Learning Workshop, JP Morgan Glasgow, December 2016
           \item 1st place Design Challenge, TEDX Strathclyde, November 2016
-          \item Fluent in English and Greek, Intermediate knowledge of Portuguese
-          \item I have completed the original Athens Marathon in 2015 
+          \item Fluent in English and Greek, Basic knowledge of Portuguese
+          \item Finished Semi-Marathon in 2014
+          \item Completed my military obligations successfully.
+          \item Contributed to the Greek translation of English strings for the open-source Bitcoin Core project.
 		\end{itemize}}%
 \end{minipage}%
 
 
-\section{WORKSHOPS AND CONFERENCES}
+\section{WORKSHOPS, CONFERENCES AND CERTIFICATES}
 \begin{minipage}{\maincolumnwidth}%
 	\small{
     	\begin{itemize}
@@ -226,6 +228,8 @@
           \item SiSRG research group presentations, University of Strathclyde, 2017-Present.
           \item SICSA PhD Conference 2019, University of Stirling, 2019
           \item ICMI 2017, University of Glasgow, I was a Student Volunteer \textit{https://icmi.acm.org/2017/index.php?id=people}
+          \item Presented in the "OMAKOION" seminar series. These series were hosting talks in a variety of scientific, military operations and general interest topics.
+          \item Software Processes and Agile Practices, Authorised by The University of Alberta \\     \textit{{https://www.coursera.org/account/accomplishments/certificate/5E4VJ58RYGER}.
 		\end{itemize}}%
 \end{minipage}%
 
@@ -234,7 +238,7 @@
 	\small{
     	\begin{itemize}
           \item Central Bank of Greece, Directors Dr. Eythimios Gatzonas and Mr. George Stoubos.
-          \item Centre of Information Technology Support of the Hellenic Army, Dr. Ioannis Malandrakis (Coloner RI).
+          \item Centre of Information Technology Support of the Hellenic Army, Dr. Ioannis Malandrakis (Colonel RI).
 		\end{itemize}}%
 \end{minipage}%
       
@@ -259,5 +263,3 @@
 
 \end{document}
 
-
-%% end of file `template.tex'.
