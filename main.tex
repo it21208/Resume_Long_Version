@@ -1,8 +1,9 @@
 \documentclass[11pt,a4paper,roman]{moderncv}        
-\moderncvstyle{classic} % style options are 'casual', 'classic', and 'banking'
+\moderncvstyle{classic} % style options= 'casual', 'classic', and 'banking'
 \moderncvcolor{black}                   
 \renewcommand{\familydefault}{\rmdefault}
-\nopagenumbers{}                        
+\nopagenumbers{}   
+\usepackage{array}
 \usepackage[utf8]{inputenc}
 \usepackage{fancyhdr}
 \pagenumbering{alph}
@@ -14,243 +15,64 @@
 \setlength{\hintscolumnwidth}{3cm}       
 \usepackage{outlines}
 \usepackage{import}
-
 \name{Alexandros Ioannidis}{}
-\title{Resume}                             
+\title{\textbf{Resume}}                             
 \address{\textbf{Dirfis 30B, Athens, Attica, Zip Code: 152 35}}{}{}
-\phone[mobile]{+30-6987312863}          
+\phone[mobile]{\textbf{+30-6987312863}}
 \email{alexioanid@yahoo.gr | alexandros.ioannidis@strath.ac.uk}       
 \homepage{www.github.com/it21208 | www.linkedin.com/in/alexandrosioannidis}
 \extrainfo{European Driving License: A2, B}
-
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\photo[64pt][0.4pt]{picture}  optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %\makeatother
 % \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
-  
 \newcommand*{\customcventry}[7][.25em]{
   \begin{tabular}{@{}l} 
     {\bfseries #4}
   \end{tabular}
-  \hfill% move it to the right
+  \hfill
   \begin{tabular}{l@{}}
      {\bfseries #5}
   \end{tabular} \\
   \begin{tabular}{@{}l} 
     {\itshape #3}
   \end{tabular}
-  \hfill% move it to the right
+  \hfill
   \begin{tabular}{l@{}}
      {\itshape #2}
   \end{tabular}
-  \ifx&#7&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#7%
-    \end{minipage}}\fi%
+  \ifx&#7&
+  \else{\\
+    \begin{minipage}{\maincolumnwidth}
+      \small#7
+    \end{minipage}}\fi
   \par\addvspace{#1}}
-
 \newcommand*{\customcvproject}[4][.25em]{
   \begin{tabular}{@{}l} 
     {\bfseries #2}
   \end{tabular}
-  \hfill% move it to the right
+  \hfill
   \begin{tabular}{l@{}}
      {\itshape #3}
   \end{tabular}
-  \ifx&#4&%
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#4%
-    \end{minipage}}\fi%
+  \ifx&#4&
+  \else{\\
+    \begin{minipage}{\maincolumnwidth}
+      \small#4
+    \end{minipage}}\fi
   \par\addvspace{#1}}
-
 \setlength{\tabcolsep}{12pt}
-
 \begin{document}
 \makecvtitle
 \vspace*{-12mm}
-\section{EDUCATION}
-{\customcventry{September 2017 - Present}{PhD in Computer and Information Sciences}{University of Strathclyde}{Glasgow, UK}{}{} Ongoing funded and innovative Research and Development}
-\vspace{3mm}
-
-{\customcventry{September 2017 - June 2019}{Post-Graduate Certificate in Research Professional Development}{University of Strathclyde}{Glasgow, UK}{}{} Collected 60/60  E.C.T.S. credits }
-\vspace{3mm}
-
-{\customcventry{September 2016 - August 2017}{Master of Science in Advanced Computer Science}{University of Strathclyde}{Glasgow, UK}{}{} Grade of Degree: Merit ( 69\% ) }
-\vspace{3mm}
-
-{\customcventry{September 2012 - July 2016}{Bachelor of Science in Informatics and Telematics}{Harokopio University of Athens}{Athens, Greece}{}{} Grade of Degree: Merit ( 7.5 / 10 )}
-\vspace{3mm}
-
-{\customcventry{September 2009 - July 2012}{Technological Stream}{2nd General Lyceum of Vrilissia}{Athens, Greece}{}{} Grade of Degree: Merit ( 17.8 / 20 )}
-
-\section{KEY SKILLS}
-\begin{itemize}
-    \item \textbf{Programming Languages:} Python3, Java, R, HTML/CSS, Python2, MySQL, SQL Oracle, JavaScript.
-    \item \textbf{Systems:} Anaconda, Phpmyadmin, Apache Server 2, Apache Lucene, Apache Spark, Apache JMeter, Glassfish Server, CMS Tools (i.e. Wordpress, OpenCart, Xcart), Overleaf.
-    item \textbf{IDEs:} Visual Studio Code, NetBeans, Spider and Jupyter Notebook. 
-    \item \textbf{Operating Systems:} Mainly Linux Ubuntu and Debian flavours, Windows 10, 7 and Vista and Unix Solaris.
-    \item \textbf{General Purpose Software:} Microsoft Office Suite, Libre Office, LaTeX (Overleaf), BibTeX, OneNote, Slack, Trello, EndNote, Zoom, Microsoft Project, Skype 4 Business.
-    \item \textbf{Version Control System: } Git.
-    \item In my 12-month placement in the Central Bank of Greece, I displayed organisational, communication and analytical skills in assisting teams within the ESSM division.
-    \item \textbf{Datasets:} Experienced with the following Datasets and Test Collections: PubMed article data, Movie Lens datasets, Netflix dataset, Blood Transfusion Service dataset (UCI ML repository), CDNOW transactional dataset, Titanic dataset (Kaggle repository), NYT 2017 Common Core Collections, Job Shop Scheduling data and more.
-    \item \textbf{Soft Skills:} I am a disciplined, dedicated and strong-willed professional with great aspirations. I am willing to extend my knowledgebase and put in the work necessary to deliver projects on time. 
-    \item \textbf{Weaknesses:} Not well familiarised with Agile, Scrum, Waterfall development although I have completed a Software Processes & Agile Practices course.
-\end{itemize}
-
-\section{ACADEMIC PROJECTS}
-{\customcvproject{Ph.D. Thesis | Doctoral Researcher \\ Information Retrieval \& Artificial Intelligence for Conducting Systematic Reviews}{Aug 2017 - Present}
-  {\begin{itemize}
-    \item Research topic on Information Retrieval and Machine Learning for conducting Systematic Reviews.
-    \item My research focuses on reducing the medical cost of assessing documents by using, extending and developing information retrieval tool-kits and applying continuous active learning with supervised Machine Learning techniques in Java and Python to create intelligent digital search assistants.
-    \item These assistants are developed in such way to collaborate with human reviewers to complete the tasks of creating systematic reviews for diagnostic test accuracy in information retrieval.
-    \item Evaluating information retrieval search strategies (i.e. document ranking and screening models).
-    \item Not graduated yet.
-  \end{itemize}
-  }
-}
-
-{\customcvproject{Master of Science Thesis | Post-Graduate Researcher} {Feb 2017 – Jul 2017}
-{\begin{itemize}
-  \item The purpose of the research was to assert the generality of the predictive RFMTC model as an improved more customisable alternative of the RFM marketing model and other Machine Learning algorithms (i.e. SVM, K-Means). 
-  \item And to justify the additional implementation complexity of some model parameters such as the Time since first purchase or donation of a customer in a certain period and the Churn rate as a productive one. I used extensively the R scripting language, the CRAN repository for the minimisation of objective non-linear functions and the Excel Solver Add-in.
-\end{itemize}
-}
-
-{\customcvproject{Bachelor of Science Thesis
-| Undergraduate}{Jan 2016 – May 2016}
-{\begin{itemize}
-  \item Extended a system that encourages Movie Lens users by proposing new films tailored to the needs of each user. More specifically, the SVD algorithm (http://www.timelydevelopment.com/demos/NetflixPrize.html) was parallelised in Java and Apache Spark, the third optimal algorithm in the Kaggle competition conducted by Netflix. The objective of the competition was to find the best collaborative filtering algorithm for predicting user ratings for films based on previous reviews.
-\end{itemize}
-}
-}
-
-\section{EXPERIENCE}
-{\customcventry{March 2020 - Present}{Self-employed Computer Science Teacher and IT Contractor}{Teacher and Freelancer at teacherfinder.gr, Upwork and kathigites.com}{Worldwide}{}
-{\begin{flushleft}
-\begin{itemize}
-  \item I have been teaching private lessons mainly to undergraduate and postgraduate students the following programming languages: Java, Python, R, JavaScript, HTML/CSS, MySQL and Oracle SQL. 
-  \item I have been providing technical support services mainly to postgraduate and undergraduate students. These services included designing, solving and coding projects and other exercises.
-  \item Informatics and Mathematics courses are also delivered for Lyceum and Gymnasium students.  
-  \item Courses were supported with my physical presence in a classroom set up and remotely through Skype, Zoom and Hangouts.
-\end{itemize} 
-\end{flushleft} } } 
-
-{\customcventry{August 2018 - April 2019}{Technology Analyst}{Centre of Information Technology Support of the Hellenic Army}{Athens, Greece}{}
-{\begin{flushleft}
-\begin{itemize}
-  \item Operated the Janus strategy simulation software.
-  \item Execution of various parametric spreadsheets to help allocate land army personnel.
-  \item Operated the Joint Exercise Management Module (JEMM).
-  \item Contributed in the interconnection of VBS3, SteelBeast, and JCATS through DIS.
-  \item Installed and synchronised an indoor camera with Idomeneus a high-tech software that creates a virtual reality military indoor firing range using lasers and video imagery.
-  \item Used simulation software interconnection tools and Excel to perform vlookup operations and produce para-metric spreadsheets and presentations.
-  \item  Utilised monitoring software packages i.e. Nagios, WhatsUpGold Network monitoring, PRTG.
-\end{itemize} 
-\end{flushleft} } } 
-
-{\customcventry{October 2017 - April 2019}{Java and Python Lab Demonstrator | Exams Assessor}{University of Strathclyde}{Glasgow, UK}{}
-{\begin{flushleft}
-\begin{itemize}
-\begin{outline}[enumerate]
-\1 Lab Demonstrator and Assessor for Undergraduate and Postgraduate Students at the University of Strathclyde in the Computer and Information Sciences Department.
-\1 I demonstrated at a University of the UK higher education the following Java and Python courses:
-    \2 Programming Foundations
-    \2 Advanced Programming
-    \2 Big Data Technologies
-    \2 Big Data Fundamentals
-\end{outline} 
-\end{itemize}
-\end{flushleft} } }
-
-{\customcventry{August 2017 - October 2017}{Research Analyst | Automation of Newslines pipeline}{Newslines}{Glasgow, UK}{}
-{\begin{flushleft}
-\begin{itemize}
-    \item Built a continuous delivery model to reduce editorial time for the development of articles.
-    \item Text processing on media news stream using Python libraries (i.e. nltk, beautiful soup, scikit-learn, pandas, numpy). 
-    \item Understanding the Wordpress structure of MySQL database for schema objects and their relations primary and foreign keys.
-    \item Extracting  automatically original source links from summary articles.Fetching the HTML content from the source URLs, and extraction of title and clean text of articles found on the WWW. 
-    \item Extraction of named events and named entities with Stanford NER toolkit for classification. 
-    \item Text feature extraction, tokenisation, build-analysis of text, bag of words representation, common and TF\_IDF term weighting vectoriser usage, train and test with ML models (LDA, SVM).
-    \item The project developed and the conclusion of my analysis helped form a business report (> £21000) for a bigger funding award competition which the company would participate to pursue growth. 
-\end{itemize}
-\end{flushleft} } }
-
-{\customcventry{July 2015 - July 2016}{Technology Analyst Intern | Internship}{Central Bank of Greece (BoG)}{Athens, Greece}{}
-{\begin{flushleft}
-\begin{itemize}
-    \item Participated in the migration to the Target II Security Euro-system.
-    \item Used the FT Console System for monitoring components of the Secondary Securities Market Department.
-    \item Contributed to the Bonds Report Server System written in VB2012 and participated in the development of an application which facilitated remote access for users in the Dematerialised securities System division.
-    \item Managed the Test database in Oracle SQL.
-    \item Manipulated the end-of-day buy/sell back transactions in securities within the Book-Entry Securities System of the Bank of Greece (BOGS).
-    \item Left because I wanted to expand my horizons and pursue a Master of Science degree in Glasgow, UK. 
-\end{itemize}
-\end{flushleft} } }
-\newpage
-\section{AWARDS AND ACHIEVEMENTS}
-\begin{minipage}{\maincolumnwidth}%
-	\small{
-    	\begin{itemize}
-          \item Ph.D. Scholarship Award for 36 months (Stipend and Bursary £19362 per annum), University of Strathclyde, August 2017
-          \item 3rd place in Machine Learning Workshop, JP Morgan Glasgow, December 2016
-          \item 1st place Design Challenge, TEDX Strathclyde, November 2016
-          \item Fluent in English and Greek, Basic knowledge of Portuguese
-          \item Finished Semi-Marathon in 2014
-          \item Completed my military obligations successfully.
-          \item Contributed to the Greek translation of English strings for the open-source Bitcoin Core project.
-		\end{itemize}}%
-\end{minipage}%
-
-
-\section{WORKSHOPS, CONFERENCES AND CERTIFICATES}
-\begin{minipage}{\maincolumnwidth}%
-	\small{
-    	\begin{itemize}
-          \item Big Data Analytics Introduction, JP Morgan Glasgow, May 2017.
-          \item FOSSCOMM 2016, University of Piraeus.
-          \item Agriculture Development Systems, ATHENA Research and Innovation Centre, November 2014-2015.
-          \item Presentation and Communication, British Council in Technopolis Innovation Centre, 2014.
-          \item SiSRG research group presentations, University of Strathclyde, 2017-Present.
-          \item SICSA PhD Conference 2019, University of Stirling, 2019
-          \item ICMI 2017, University of Glasgow, I was a Student Volunteer \textit{https://icmi.acm.org/2017/index.php?id=people}
-          \item Presented in the "OMAKOION" seminar series. These series were hosting talks in a variety of scientific, military operations and general interest topics.
-          \item Software Processes and Agile Practices, Authorised by The University of Alberta \\   See credential: \textit{{https://www.coursera.org/account/accomplishments/certificate/5E4VJ58RYGER}}.
-          \item Python Intermediate Certificate from HackeRank Credential ID: A453FSF30B7B \\
-          See credential: \textit{https://www.hackerrank.com/certificates/a453f5f30b7b} 
-		\end{itemize}
-\end{minipage}
-
-\section{REFERENCES}
-\begin{minipage}{\maincolumnwidth}%
-	\small{
-    	\begin{itemize}
-          \item Central Bank of Greece, Directors Dr. Eythimios Gatzonas and Mr. George Stoubos.
-          \item Centre of Information Technology Support of the Hellenic Army, Dr. Ioannis Malandrakis (Colonel RI).
-		\end{itemize}}%
-\end{minipage}%
-      
-}
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-%-----       letter       ---------------------------------------------------------
-
+\input{0education}
+\input{1keyskills}
+\input{2academicprojects}
+\input{3experience}
+\input{4awardsandachievements.tex}
+\input{5workshops_conferences_certificates.tex}
+\input{6references}
 \end{document}
 
